@@ -195,6 +195,7 @@ export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?= arm
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CROSS_COMPILE	?= /home/tom/qk/gcc-4.8/bin/arm-eabi-
 
 =======
@@ -210,6 +211,10 @@ CROSS_COMPILE	?= /home/tom/qk/linaro-4.9/bin/arm-eabi-
 
 >>>>>>> 91e78c7... workqueues: Introduce new flag WQ_POWER_EFFICIENT for power oriented workqueues
 >>>>>>> 7ab24e1... workqueues: Introduce new flag WQ_POWER_EFFICIENT for power oriented workqueues
+=======
+CROSS_COMPILE	?= /home/tom/qk/sm-4.10/bin/arm-eabi-
+
+>>>>>>> a2a88c3... block: cgroups, kconfig, build bits for BFQ-v7r2-3.4
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
 SRCARCH 	:= $(ARCH)
