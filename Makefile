@@ -194,13 +194,19 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ \
 export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?= arm
 <<<<<<< HEAD
+<<<<<<< HEAD
 CROSS_COMPILE	?= /home/tom/qk/gcc-4.8/bin/arm-eabi-
 
 =======
+=======
+>>>>>>> 6a25879... msm: bam_dmux: Use power efficient workqueues for
 <<<<<<< HEAD
 CROSS_COMPILE	?= /home/tom/qk/linaro-15/bin/arm-cortex_a15-linux-gnueabihf-
 =======
 CROSS_COMPILE	?= /home/tom/qk/gcc/bin/arm-eabi-
+=======
+CROSS_COMPILE	?= /home/tom/qk/linaro-4.9/bin/arm-eabi-
+>>>>>>> 35812c1... msm: bam_dmux: Use power efficient workqueues for
 
 >>>>>>> 91e78c7... workqueues: Introduce new flag WQ_POWER_EFFICIENT for power oriented workqueues
 >>>>>>> 7ab24e1... workqueues: Introduce new flag WQ_POWER_EFFICIENT for power oriented workqueues
