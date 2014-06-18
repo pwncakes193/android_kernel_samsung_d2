@@ -193,7 +193,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ \
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?= arm
-CROSS_COMPILE	?= /home/tom/qk/sm-4.10/bin/arm-eabi-
+CROSS_COMPILE	?= /home/tom/qk/linaro-4.9/bin/arm-eabi-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
@@ -359,11 +359,9 @@ AFLAGS_KERNEL	= -fgcse-lm -fgcse-sm -fsched-spec-load -fforce-addr -fsingle-prec
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
 XX_A9		= -marm \
 		  -mvectorize-with-neon-quad
-XX_GRAPHITE	= -fgraphite-identity -ftree-loop-distribution -floop-block -ftree-loop-linear \
-		  -ftree-loop-im -fivopts -funswitch-loops -funroll-loops -floop-strip-mine \
+XX_GRAPHITE	= -ftree-loop-distribution \
+		  -ftree-loop-im -fivopts -funswitch-loops -funroll-loops \
 		  -ftree-loop-ivcanon
-XX_MODULO	= -fmodulo-sched -fmodulo-sched-allow-regmoves
-
 
 # Use LINUXINCLUDE when you must reference the include/ directory.
 # Needed to be compatible with the O= option
